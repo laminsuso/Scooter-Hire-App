@@ -1,0 +1,23 @@
+{
+  "name": "scooter-hire-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:report": "jest --coverage=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laminsuso/Scooter-Hire-App.git"
+  },
+  "author": "Lamin Suso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laminsuso/Scooter-Hire-App/issues"
+  },
+  "homepage": "https://github.com/laminsuso/Scooter-Hire-App#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
