@@ -41,4 +41,9 @@ describe('User Clas', () =>{
         const testTotalPayment = new User('Lamin','Password','3425665','suso@menubar.com','444-657-9763',1200, 1700,76)
         expect(testTotalPayment.totalPayment()).toBe(76)
     })
+
+    test('ageTest method', ()=>{
+        const testA = new User('Lamin','Password','3425665','suso@menubar.com','444-657-9763',1200, 1700,17)
+        expect(testA.ageTest()).toBe('You cannot rent')
+    })
 })
