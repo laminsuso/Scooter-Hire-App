@@ -5,4 +5,5 @@ describe('Scooter Class', ()=>{
         const testId = new Scooter('01')
         expect(testId.idNumber).toBe('01')
     })
+
 })
