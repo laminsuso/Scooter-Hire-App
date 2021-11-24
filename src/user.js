@@ -9,8 +9,12 @@ class User{
         this.endTime = endTime
         this.timeRented = []
     }
-    paidInFull(timeRented){
-        return (timeRented * .15) + 1
+
+        totalAmount(){
+            return (this.endTime - this.startTime) * 0.15 + 1
+        }
     }
-}
+
+    let r1 = new User("me", "Top", "3425665", "suso@menubar.com", "444-657-9763", 1200, 1700)
+    console.log(r1.totalAmount())
 module.exports = User
