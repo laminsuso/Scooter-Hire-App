@@ -1,9 +1,13 @@
 const Scooter = require('./scooter')
 
 describe('Scooter Class', ()=>{
-    test('Has an id', ()=>{
-        const testId = new Scooter('01')
-        expect(testId.idNumber).toBe('01')
+    const testScooter = new Scooter(3,'DFW','Dallas','Y')
+    test('Test the Scooter class', ()=>{
+        expect(testScooter.idNumber).toBe(3)
+        expect(testScooter.chargingOrigin).toBe('DFW')
+        expect(testScooter.chargingDropOff).toBe('Dallas')
+        expect(testScooter.checkedOut).toBe('Y')
+        expect(testScooter.isCheckedOut()).toBe(true)
     })
 
 })
